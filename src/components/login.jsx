@@ -23,10 +23,11 @@ const Login = () => {
             if (data.status === "success") {
                 navigate("/dashboard");
             } else {
-                alert("Login Failed");
+                alert("Login Failed" + data.message);
             }
         } catch (error) {
             console.error("Error:", error);
+            alert("Error System")
         }
     }
     return(
