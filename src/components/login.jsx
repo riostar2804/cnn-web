@@ -10,7 +10,7 @@ const Login = () => {
         e.preventDefault();
         
         try {
-            const response = await fetch("https://cnn-backend.jupriolas.workers.dev/", {
+            const response = await fetch("https://cnn-backend.jupriolas.workers.dev/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
