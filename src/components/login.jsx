@@ -8,6 +8,11 @@ const Login = () => {
     const navigate = useNavigate();
     async function handleLogin (e) {
         e.preventDefault();
+
+        if(!password || password.trim() === "") {
+            alert("Password must be filled");
+            return;
+        }
         
         try {
             const response = await fetch("https://cnn-backend.jupriolas.workers.dev/login", {
@@ -23,7 +28,7 @@ const Login = () => {
             if (data.status === "success") {
                 navigate("/dashboard");
             } else {
-                alert("Login Failed" + data.message);
+                alert(data.message);
             }
         } catch (error) {
             console.error("Error:", error);
