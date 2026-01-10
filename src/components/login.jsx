@@ -8,12 +8,22 @@ const Login = () => {
     const navigate = useNavigate();
     async function handleLogin (e) {
         e.preventDefault();
+    
+        if ((!email || email.trim() === "") && (!password || password.trim() === "")){
+            alert("Email and Password must be filled");
+            return;
+        }
 
-        if(!password || password.trim() === "") {
+        if (!email || email.trim() === ""){
+            alert("Email must be filled");
+            return;
+        }
+
+        if (!password || password.trim() === "") {
             alert("Password must be filled");
             return;
         }
-        
+
         try {
             const response = await fetch("https://cnn-backend.jupriolas.workers.dev/login", {
                 method: "POST",
