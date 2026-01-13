@@ -39,21 +39,21 @@ const Dashboard = () =>{
                     </button>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="div-grid">
 
-                    <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
-                        <p className="text-gray-500 text-sm">Total Users</p>
-                        <p className="text-2xl font-bold text-gray-800">1,212</p>
+                    <div className="div-grid-content border-blue-500">
+                        <p className="div-grid-content-p1">Total Users</p>
+                        <p className="div-grid-content-p2">1,212</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
-                        <p className="text-gray-500 text-sm">Revenue</p>
-                        <p className="text-2xl font-bold text-gray-800">$12,474</p>
+                    <div className="div-grid-content border-green-500">
+                        <p className="div-grid-content-p1">Revenue</p>
+                        <p className="div-grid-content-p2">$12,474</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
-                        <p className="text-gray-500 text-sm">Activate</p>
-                        <p className="text-2xl font-bold text-gray-800">32</p>
+                    <div className="div-grid-content border-purple-500">
+                        <p className="div-grid-content-p1">Activate</p>
+                        <p className="div-grid-content-p2">32</p>
                     </div>
 
                 </div>

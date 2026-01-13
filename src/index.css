@@ -2,6 +2,148 @@
 @tailwind components;
 @tailwind utilities;
 
+/* LOGIN */
+.div-bg{
+  @apply flex items-center justify-center h-screen bg-gray-100
+}
+
+.div-box{
+  @apply w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md
+}
+
+.h2-class {
+  @apply text-2xl font-bold text-center text-gray-900
+}
+
+.label{
+  @apply block mb-1 text-sm text-left font-medium text-gray-700
+}
+
+.label-input{
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition
+}
+
+.button-submit{
+  @apply w-full px-4 py-2 font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition
+}
+
+/* DASHBOARD */
 .btn-danger {
   @apply mt-4 bg-red-500 text-white font-bold  py-2 px-4 rounded hover:bg-red-600 transition
+}
+
+.div-grid{
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6
+}
+
+.div-grid-content{
+  @apply bg-white p-6 rounded-lg shadow-sm border-l-4
+}
+
+.div-grid-content-p1{
+  @apply text-gray-500 text-sm
+}
+
+.div-grid-content-p2{
+  @apply text-2xl font-bold text-gray-800
+}
+
+/* SIDEBAR */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out
+}
+
+.base-class{
+  @apply w-full flex items-center gap-3 px-1.5 py-3 rounded-lg transition-all duration-300 overflow-hidden
+}
+
+.isActive-blue{
+  @apply bg-blue-600 text-white rounded-lg shadow-md transition-all
+}
+
+.isActive-grey{
+  @apply text-gray-400 hover:bg-gray-800 hover:text-white rounded-lg transition-all
+}
+
+.div-bg-sidebar{
+  @apply h-screen bg-gray-900 text-white flex flex-col p-4 fixed left-0 top-0 z-50 transition-all duration-300 ease-in-out w-20 translate-x-0
+}
+
+.div-bg-sidebar-collapse{
+  @apply mb-6 mt-4 flex items-center cursor-pointer hover:bg-gray-800 rounded-lg p-2 transition-all justify-center
+}
+
+.div-sidebar-title{
+  @apply md:hidden p-6 mb-2 border-b border-gray-800 
+}
+
+.span-sidebar{
+  @apply text-blue-500
+}
+
+.h1-class-sidebar{
+  @apply text-2xl font-bold text-white tracking-wider cursor-pointer
+}
+
+.p-class-sidebar{
+  @apply text-xs text-gray-500 mt-1 px-2
+}
+
+.icon-menu{
+  @apply text-gray-400 hover:text-white transition-colors
+}
+
+.nav-sidebar{
+  @apply flex-1 space-y-2 px-2 md:mt-6 mt-4
+}
+
+.nav-sidebar-span{
+  @apply whitespace-nowrap hidden
+}
+
+.div-logout{
+  @apply mt-auto pt-6 border-t border-gray-800
+}
+
+.btn-logout{
+  @apply w-full flex items-center gap-3 px-4 py-3 text-red-400 hover:bg-red-500/10 rounded-lg transition-colors overflow-hidden justify-center
+}
+
+/*Layout*/
+.div-layout{
+  @apply flex relative bg-gray-100 min-h-screen font-sans
+}
+
+.div-main-layout{
+  @apply flex-1 transition-all duration-300 p-4 md:p-8 mt-16 ml-20 md:mt-0
+}
+
+/* Layout Responsive*/
+.div-layout-responsive{
+  @apply md:hidden fixed bg-black text-white p-4 flex items-center justify-between top-0 z-40 shadow-md h-16
+}
+
+.div-layout-responsive-title{
+  @apply flex items-center gap-2
+}
+
+.div-layout-responsive-span1{
+  @apply font-bold text-lg
+}
+
+.btn-layout-responsive{
+  @apply p-1 rounded hover:bg-gray-800
+}
+
+.div-layout-responsive-span2{
+  @apply text-blue-500
+}
+
+.div-layout-responsive-overlay{
+  @apply md:hidden fixed inset-0 bg-black/50 z-40 transition-opacity backdrop-blur-sm
 }
